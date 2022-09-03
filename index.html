@@ -43,6 +43,12 @@
         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
       }
 
+      section h1 {
+        font-size: 1.75rem;
+        font-weight: 900;
+        color: var(--dark-blue);
+      }
+
       .hero {
         min-height: 13.75rem;
         background-image: url('./images/illustration-hero.svg');
@@ -66,8 +72,21 @@
 
       .description > p {
         padding: 1.625rem 0;
+        font-size: 1rem;
+        font-weight: 500;
+        line-height: 1.625rem;
+        color: var(--desaturated-blue);
+      }
+      .change-link,
+      .change-link:visited {
+        color: var(--bright-blue);
+        font-weight: 700;
+        font-size: 0.875rem;
       }
 
+      .change-link:hover {
+        text-decoration: none;
+      }
       .actions {
         padding-top: 2rem;
       }
@@ -91,6 +110,10 @@
       .actions .cancel-button {
         margin-top: 1rem;
         color: var(--desaturated-blue);
+      }
+
+      .actions .cancel-button:hover {
+        color: var(--dark-blue);
       }
 
       .pricing__details {
