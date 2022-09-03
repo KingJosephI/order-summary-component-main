@@ -39,6 +39,8 @@
         border-radius: 1.25rem;
         overflow: hidden;
         text-align: center;
+        background-color: #fff;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
       }
 
       .hero {
@@ -47,30 +49,75 @@
         background-repeat: no-repeat;
         background-size: cover;
       }
+
+      .description {
+        padding: 3.25rem;
+      }
+
+      .pricing {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: var(--very-pale-blue);
+        padding: 1rem;
+        border-radius: 0.7rem;
+      }
+
+      .description > p {
+        padding: 1.625rem 0;
+      }
+
+      .actions {
+        padding-top: 2rem;
+      }
+
+      .actions > a {
+        display: block;
+        text-decoration: none;
+        font-weight: 900;
+        font-size: 0.9375rem;
+      }
+
+      .actions .proceed-button {
+        background-color: var(--bright-blue);
+        color: #fff;
+        padding: 0.7rem;
+        border-radius: 0.7rem;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+          rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+      }
+
+      .actions .cancel-button {
+        margin-top: 1rem;
+        color: var(--desaturated-blue);
+      }
     </style>
   </head>
   <body>
     <section>
       <div class="hero"></div>
-      <div>
+      <div class="description">
         <h1>Order Summary</h1>
         <p>
           You can now listen to millions of songs, audiobooks, and podcasts on
           any device anywhere you like!
         </p>
 
-        <div>
+        <div class="pricing">
           <img src="./images/icon-music.svg" alt="music icon" />
           <div>
             <h3>Annual Plan</h3>
             <p>$59.99/year</p>
           </div>
 
-          <a href="#">Change</a>
+          <a href="#" class="change-link">Change</a>
         </div>
 
-        <a href="#">Proceed to Payment</a>
-        <a href="#">Cancel Order</a>
+        <div class="actions">
+          <a href="#" class="proceed-button">Proceed to Payment</a>
+          <a href="#" class="cancel-button">Cancel Order</a>
+        </div>
       </div>
     </section>
 
